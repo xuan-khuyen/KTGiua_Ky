@@ -20,7 +20,7 @@ function sayHello($name) {
 		
 		sayHello('the King');
 			
-		phpinfo(); 
+	
 			
 		?>
 		<form action="checkLogin.phd" method="POST">
