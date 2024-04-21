@@ -4,6 +4,25 @@
 <p>2: </p>
 <p>3:</p>
 
+# Create Php Project using virtual platforms
+**[Visual Studio Code Dev Containers](https://aka.ms/vscode-remote/containers)**.
+
+# Connect to SQL based database (e.g. PostGres SQL Heroku)
+
+## Credentials
+<img src="https://nglthu.github.io/ContainerWebPhpDev/img/accessInfo.png">
+
+## SQL commands with dataClips
+
+https://dev.to/danielmabadeje/how-to-create-tables-on-heroku-postgresql-1n42
+Before writting set
+```
+set transation read write;
+```
+<img src="https://nglthu.github.io/ContainerWebPhpDev/img/dataClips.png">
+
+
+
 [![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-php)
 
 A **development container** is a running container with a well-defined tool/runtime stack and its prerequisites. You can try out development containers with **[GitHub Codespaces](https://github.com/features/codespaces)** or **[Visual Studio Code Dev Containers](https://aka.ms/vscode-remote/containers)**.
