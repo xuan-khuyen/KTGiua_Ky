@@ -29,7 +29,9 @@ Before writting set
 ```
 set transation read write;
 ```
-<img src="https://nglthu.github.io/ContainerWebPhpDev/img/dataClips.png">
+Use SQL commands for creating database and querying data
+
+<img src="https://nglthu.github.io/ContainerWebPhpDev/img/table_query.png">
 
 
 
