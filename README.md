@@ -9,7 +9,15 @@
 [![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-php)
 **[Visual Studio Code Dev Containers](https://aka.ms/vscode-remote/containers)**.
 
+# App Deployment with Heroku & PostGres
+
+Deploy Your App with Heroku 
+
+<img src="https://nglthu.github.io/ContainerWebPhpDev/img/HerokuPostgres.png">
+
 # Connect to SQL based database (e.g. PostGres SQL Heroku)
+
+Use Heroku PostGres for free database (support 70000 rows of data at free tier)
 
 ## Credentials
 <img src="https://nglthu.github.io/ContainerWebPhpDev/img/accessInfo.png">
