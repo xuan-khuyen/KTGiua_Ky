@@ -1,8 +1,39 @@
-# Try Out Development Containers: PHP for K15 N02
+# Try Out Development Containers: PHP for K15 - 2024
 <h3>Thành viên nhóm</h3>
-<p>Nguyễn Lệ Thu</p>
-<p>Vu Thanh Dat</p>
-<p>Nguyễn Chí Công</p>
+<p>1: </p>
+<p>2: </p>
+<p>3:</p>
+
+# Create Php Project using virtual platforms
+
+[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-php)
+**[Visual Studio Code Dev Containers](https://aka.ms/vscode-remote/containers)**.
+
+# App Deployment with Heroku & PostGres
+
+Deploy Your App with Heroku 
+
+<img src="https://nglthu.github.io/ContainerWebPhpDev/img/HerokuPostgres.png">
+
+# Connect to SQL based database (e.g. PostGres SQL Heroku)
+
+Use Heroku PostGres for free database (support 70000 rows of data at free tier)
+
+## Credentials
+<img src="https://nglthu.github.io/ContainerWebPhpDev/img/accessInfo.png">
+
+## SQL commands with dataClips
+
+https://dev.to/danielmabadeje/how-to-create-tables-on-heroku-postgresql-1n42
+Before writting set
+```
+set transation read write;
+```
+Use SQL commands for creating database and querying data
+
+<img src="https://nglthu.github.io/ContainerWebPhpDev/img/table_query.png">
+
+
 
 [![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-php)
 
