@@ -14,7 +14,7 @@ echo "Session Id: ".$id ;
    $msg = "Number of visits in this session: ".  $_SESSION['counter'];
  
    echo "$msg"; 
-?>
+
 
 
 ?>
