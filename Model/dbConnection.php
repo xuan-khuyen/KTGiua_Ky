@@ -19,9 +19,7 @@ $port =getenv('Port');
 $user = getenv('User');
 $password = getenv('Password');
 
-echo $host;
-
-//phpinfo();
+phpinfo();
 
 
 //$dbconn = pg_connect("dbname=$db");
@@ -32,10 +30,20 @@ echo $host;
 
 //$dbconn3 = pg_connect("host=sheep port=5432 dbname=mary user=lamb password=foo");
 //connect to a database named "mary" on the host "sheep" with a username and password
+//user, pass, host, port, and database name.
+//$conn_string = "host=$host port=$port dbname=$db user=$user password=$password";
 
-$conn_string = "host=$host port=$port dbname=$db user=$user password=$password";
+$conn_string = "postgres://$user:$password@$host:$port/$db";
+
+
+
 echo $conn_string;
-$dbconn4 = pg_connect('host=$host port=$port dbname=$db user=$user password=$password');
+//$dbconn4 = pg_connect('PgSql:host=$host port=$port dbname=$db user=$user password=$password');
+//$dbh = new PDO('pgSql:$conn_string');
+$dbconn4 = pg_connect($conn_string) ;
+if(!$dbconn4){
+  echo "Error : Unable to open database\n";
+}
 $result = pg_query($dbconn4, "select * from sach");
 var_dump(pg_fetch_all($result));
 //connect to a database named "test" on the host "sheep" with a username and password

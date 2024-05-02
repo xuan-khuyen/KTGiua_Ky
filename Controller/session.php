@@ -1,19 +1,20 @@
 <?php
-session_start();
-$_SESSION["userID"] = "test";
 
-//check user id
-$userID = $_SESSION["userID"];
-echo "Hello" . " " . $userID;
-
-//session_destroy();
-//$userID = $_SESSION["userID"];
-
-//Huy bien session
-
-unset($_SESSION["userID"]);
-
-echo "Hello, session is closed" . " " . $userID;
-
+$a = session_id();
+if ($a == '') session_start();
+//isset — Determine if a variable is declared and is different than null
+if (!isset($_SESSION['safety']))
+{
+    session_regenerate_id(true);
+   
+    $_SESSION['safety'] = true;
+    echo "Hello, session is " . " " . $safety;
+}
+$_SESSION['sessionid'] = session_id();
 
 ?>
+<html>
+
+<p>test session</p>
+
+</html>
