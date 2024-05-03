@@ -18,7 +18,7 @@ $isLogin = $_SESSION['isLogin'];
 //echo "isLogin=".$isLogin;
 if ($isLogin){
    // $_SESSION($user) ;
-   $content="/View/content.htm";
+   $content="/View/content.php";
    echo ("<script>location.href='$content'</script>");
   
 }

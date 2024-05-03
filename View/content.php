@@ -1,6 +1,6 @@
 <?php
 //set cookies
-if (ini_get('session.use_cookies')) {
+if (ini_get("session.use-cookies”)) {
 
     $params = session_get_cookie_params();
 
