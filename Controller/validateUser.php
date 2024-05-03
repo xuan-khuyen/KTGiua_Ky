@@ -17,9 +17,9 @@ if ($user =="admin"){
 $isLogin = $_SESSION['isLogin'];
 echo "isLogin=".$isLogin;
 While ($isLogin){
-    $_SESSION("user") ;
-    header("Location: /workspaces/WebPhpDev/View/content.htm");
+   // $_SESSION($user) ;
   
+    echo "location.href='/workspaces/WebPhpDev/View/content.htm'";
 
 }
 While(!$isLogin){
