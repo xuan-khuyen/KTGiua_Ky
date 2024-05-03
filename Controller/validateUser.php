@@ -18,12 +18,12 @@ $isLogin = $_SESSION['isLogin'];
 echo "isLogin=".$isLogin;
 if ($isLogin){
    // $_SESSION($user) ;
+   $yourURL="/View/content.htm";
+    echo ("<script>location.href='$yourURL'</script>");
   
-    echo "location.href='/workspaces/WebPhpDev/View/content.htm'";
-
 }
 else {
    
-    echo "location.href='/workspaces/WebPhpDev/index.php'";
+    echo "window.location.href='/workspaces/WebPhpDev/index.php'";
 }
 ?>
