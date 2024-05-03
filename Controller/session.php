@@ -15,11 +15,20 @@ echo "Session Id: ".$id ;
    }
    $msg = "Number of visits in this session: ".  $_SESSION['counter'];
 
-   echo "Session Id: ".$id . " " ;
+   echo "Session Id: ".$id . "<br>" ;
  
    echo "$msg";
 
+/*
+//Luu trang thai dang nhap
+$_SESSION["isLogin"] =true;
+//Luu ten dang nhap
+$_SESSION["username"] = "";
+//Luu loai quyen dang nhap
+$_SESSION["authentication_right"]="";
 
+
+*/
 
 ?>
 <html>
