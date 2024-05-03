@@ -1,6 +1,6 @@
 <?php
 //set cookies
-if (ini_get("session.use-cookies”)) {
+if (ini_get('session.use-cookies')) {
 
     $params = session_get_cookie_params();
 
@@ -23,10 +23,4 @@ if (ini_get("session.use-cookies”)) {
     );
 
 }
-echo "Hello the world".$params;
-
 ?>
-<html>
-
-
-</html>
