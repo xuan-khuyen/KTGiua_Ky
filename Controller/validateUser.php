@@ -15,15 +15,16 @@ if ($user =="admin"){
 }
 //Truy xuat gia tri tu bien Session
 $isLogin = $_SESSION['isLogin'];
-echo "isLogin=".$isLogin;
+//echo "isLogin=".$isLogin;
 if ($isLogin){
    // $_SESSION($user) ;
-   $yourURL="/View/content.htm";
-    echo ("<script>location.href='$yourURL'</script>");
+   $content="/View/content.htm";
+   echo ("<script>location.href='$content'</script>");
   
 }
 else {
-   
-    echo "window.location.href='/workspaces/WebPhpDev/index.php'";
+    
+    echo $user. " or ". $pass. "is incorrect";
+ 
 }
 ?>
