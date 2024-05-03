@@ -16,13 +16,14 @@ if ($user =="admin"){
 //Truy xuat gia tri tu bien Session
 $isLogin = $_SESSION['isLogin'];
 echo "isLogin=".$isLogin;
-While ($isLogin){
+if ($isLogin){
    // $_SESSION($user) ;
   
     echo "location.href='/workspaces/WebPhpDev/View/content.htm'";
 
 }
-While(!$isLogin){
-    header("Location: /workspaces/WebPhpDev/index.php");
+else {
+   
+    echo "location.href='/workspaces/WebPhpDev/index.php'";
 }
 ?>
