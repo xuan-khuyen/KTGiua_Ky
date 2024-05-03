@@ -8,7 +8,7 @@ $pass = $_REQUEST["passWordLogin"];
 
 
 
-echo $user;
+//echo $user;
 if ($user =="admin"){
     
     $_SESSION['isLogin'] = true;
@@ -24,7 +24,7 @@ if ($isLogin){
 }
 else {
     
-    echo $user. " or ". $pass. "is incorrect";
+    echo "Username: ". $user. " or password: ". $pass. "is incorrect";
  
 }
 ?>
