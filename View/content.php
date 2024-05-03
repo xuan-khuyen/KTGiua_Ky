@@ -8,8 +8,7 @@ if (ini_get('session.use-cookies')) {
 
         session_name(),
 
-        ”,
-
+        "test",
         time() - 42000,
 
         $params[“path”],
@@ -23,4 +22,6 @@ if (ini_get('session.use-cookies')) {
     );
 
 }
+$ten = session_name();
+echo 'Hello the world'.$ten;
 ?>
