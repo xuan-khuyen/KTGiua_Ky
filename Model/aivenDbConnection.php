@@ -1,11 +1,11 @@
 <?php
 
-$uri = "mysqli://avnadmin:AVNS_5Ych6k-xoWyh12cOlnI@mysql-2eb27325-insourceit-0c39.h.aivencloud.com:17610/defaultdb?ssl-mode=REQUIRED";
+$uri = "mysql://avnadmin:AVNS_5Ych6k-xoWyh12cOlnI@mysql-2eb27325-insourceit-0c39.h.aivencloud.com:17610/defaultdb?ssl-mode=REQUIRED";
 
 $fields = parse_url($uri);
 
 // build the DSN including SSL settings
-$conn = "mysqli:";
+$conn = "mysql:";
 $conn .= "host=" . $fields["host"];
 $conn .= ";port=" . $fields["port"];;
 $conn .= ";dbname=defaultdb";
