@@ -19,14 +19,20 @@ try {
     print($stmt->fetch()[0]);
     $row = $db->query("select * from todos");
 
-    printf($row->rowCount());
+    /*printf($row->rowCount());
     if($row->rowCount()>0){
         while ($r = $row->fetch()[2]){
             echo $r;
 
         }
-    }
+    }*/
+    if($row->rowCount()>0){
+        while ($r = $row->fetchObject()){
+            echo $r->date;
+            echo $r->description;
 
+        }
+    }
    
 } catch (Exception $e) {
     echo "Error: " . $e->getMessage();
