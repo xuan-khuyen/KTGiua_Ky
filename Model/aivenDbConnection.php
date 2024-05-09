@@ -14,8 +14,20 @@ $conn .= ";sslmode=verify-ca;sslrootcert='pri/ca.pem'";
 try {
     $db = new PDO($conn, $fields["user"], $fields["pass"]);
 
-    $stmt = $db->query("SELECT VERSION()");
+    $stmt = $db->query("SELECT version()");
+
     print($stmt->fetch()[0]);
+    $row = $db->query("select * from todos");
+
+    printf($row->rowCount());
+    if($row->rowCount()>0){
+        while ($r = $row->fetch()[2]){
+            echo $r;
+
+        }
+    }
+
+   
 } catch (Exception $e) {
     echo "Error: " . $e->getMessage();
 }
